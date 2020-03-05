@@ -32,6 +32,12 @@ android {
     }
 
 }
+repositories {
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.jaredsburrows.spoon'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -47,4 +53,13 @@ dependencies {
     androidTestImplementation 'com.schibsted.spain:barista:3.2.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'com.squareup.spoon:spoon-client:2.0.0-SNAPSHOT'
+}
+
+spoon {
+    devices = ["e59db95a", "emulator-5554"]
+    shard = true
+    numShards = 10
+    ignoreFailures = true
+    clearAppDataBeforeEachTest = true
 }
