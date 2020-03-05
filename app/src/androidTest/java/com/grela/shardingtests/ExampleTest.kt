@@ -5,7 +5,7 @@ import com.grela.shardingtests.HomeScreenRobot.Companion.homeScreen
 import org.junit.Rule
 import org.junit.Test
 
-class ExampleTests {
+class ExampleTest {
     @get: Rule
     val homeActivityTestRule = object : ActivityTestRule<MainActivity>(MainActivity::class.java, false, false) {}
 
