@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: "com.banno.gordon"
 
 android {
     compileSdkVersion 29
@@ -47,4 +48,9 @@ dependencies {
     androidTestImplementation 'com.schibsted.spain:barista:3.2.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+gordon {
+    retryQuota.set(4)
+    poolingStrategy.set(com.banno.gordon.PoolingStrategy.AllDevices.INSTANCE)
 }
