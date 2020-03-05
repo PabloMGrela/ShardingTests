@@ -33,4 +33,11 @@ class HomeScreenRobot {
     fun snackbarIsShown() {
         assertDisplayed(InstrumentationHelper.getText(R.string.snackbar_text))
     }
+
+    fun generateRandomFailure() {
+        val random = (1..4).shuffled().first()
+        if (random > 1) {
+            assertDisplayed(R.id.textview_second)
+        }
+    }
 }

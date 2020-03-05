@@ -18,6 +18,7 @@ class ExampleTests {
         init()
         homeScreen {
             screenIsShown()
+            generateRandomFailure()
         }
     }
 
@@ -27,6 +28,7 @@ class ExampleTests {
         homeScreen {
             firstFragmentIsShown()
             tapOnNextButton()
+            generateRandomFailure()
             secondFragmentIsShown()
         }
     }
@@ -37,6 +39,7 @@ class ExampleTests {
         homeScreen {
             firstFragmentIsShown()
             tapOnFab()
+            generateRandomFailure()
             snackbarIsShown()
         }
     }
@@ -46,6 +49,7 @@ class ExampleTests {
         init()
         homeScreen {
             screenIsShown()
+            generateRandomFailure()
         }
     }
 
@@ -56,6 +60,7 @@ class ExampleTests {
             firstFragmentIsShown()
             tapOnNextButton()
             secondFragmentIsShown()
+            generateRandomFailure()
         }
     }
 
@@ -66,6 +71,88 @@ class ExampleTests {
             firstFragmentIsShown()
             tapOnFab()
             snackbarIsShown()
+            generateRandomFailure()
+        }
+    }
+
+    @Test
+    fun given_new_user_home_screen_is_displayed_copy1() {
+        init()
+        homeScreen {
+            screenIsShown()
+            generateRandomFailure()
+        }
+    }
+
+    @Test
+    fun given_new_user_home_screen_is_displayed_copy2() {
+        init()
+        homeScreen {
+            screenIsShown()
+            generateRandomFailure()
+        }
+    }
+
+    @Test
+    fun given_new_user_home_screen_is_displayed_copy3() {
+        init()
+        homeScreen {
+            screenIsShown()
+            generateRandomFailure()
+        }
+    }
+
+    @Test
+    fun given_new_user_home_screen_is_displayed_copy4() {
+        init()
+        homeScreen {
+            screenIsShown()
+            generateRandomFailure()
+        }
+    }
+
+    @Test
+    fun given_new_user_home_screen_is_displayed_copy5() {
+        init()
+        homeScreen {
+            screenIsShown()
+            generateRandomFailure()
+        }
+    }
+
+    @Test
+    fun given_new_user_home_screen_is_displayed_copy6() {
+        init()
+        homeScreen {
+            screenIsShown()
+            generateRandomFailure()
+        }
+    }
+
+    @Test
+    fun given_new_user_home_screen_is_displayed_copy7() {
+        init()
+        homeScreen {
+            screenIsShown()
+            generateRandomFailure()
+        }
+    }
+
+    @Test
+    fun given_new_user_home_screen_is_displayed_copy8() {
+        init()
+        homeScreen {
+            screenIsShown()
+            generateRandomFailure()
+        }
+    }
+
+    @Test
+    fun given_new_user_home_screen_is_displayed_copy9() {
+        init()
+        homeScreen {
+            screenIsShown()
+            generateRandomFailure()
         }
     }
 }
